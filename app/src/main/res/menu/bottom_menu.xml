@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inicioFragment"
+        android:title="@string/inicio"
+        android:icon="@drawable/ic_nav_inicio"/>
+
+    <item
+        android:id="@+id/sensoresFragment"
+        android:title="@string/sensores"
+        android:icon="@drawable/ic_nav_sensor"/>
+
+    <item
+        android:id="@+id/hortalizaFragment"
+        android:title="@string/hortaliza"
+        android:icon="@drawable/ic_nav_hortaliza"/>
+
+    <item
+        android:id="@+id/exploraFragment"
+        android:title="@string/explora"
+        android:icon="@drawable/ic_nav_explora"/>
+</menu>

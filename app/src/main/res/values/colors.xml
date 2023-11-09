@@ -6,4 +6,7 @@
     <color name="primaryLight">#C2DBC2</color>
     <color name="grayDark">#5E5E5E</color>
     <color name="light_gray">#F1F1F1</color>
+    <color name="greenrare">#D6DEB6</color>
+    <color name="greenrarelight">#E7F1BE</color>
+    <color name="yellow">#EDAB00</color>
 </resources>

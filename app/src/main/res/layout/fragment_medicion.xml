@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/medicion_sensores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLight"
+    tools:context=".ui.sensores.MedicionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/Premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_premium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prueba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prueba Urban Garden Premium"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="15 días gratis"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rectangle_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_home_corona">
+            </ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar nombre"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <EditText
+            android:id="@+id/Cambiarnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sensor 1 (Apio)"
+            android:textColorHint="@color/primary"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="1dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información del sensor"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es un sensor DHT22 realiza mediciones de temperatura (-40°C hasta 80°C) y la huedad relativa del aire (0% hasta 100%)."
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/clima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_progreso"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/img_plantaporcentaje">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El estado de tu cultivo está en un:"
+                android:textColor="@color/primary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvGradosC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="85%"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/sensorTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_sensores"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28°"
+                    android:textColor="@color/white"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="110dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_sensor_brillo"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="80dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sensorHume"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_sensores"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18°"
+                    android:textColor="@color/primary"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="110dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_sensor_brillo"
+                    android:tint="@color/primary"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="80dp"
+                    tools:ignore="UseAppTint">
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatura"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="59dp"
+                android:text="Humedad"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="18dp">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

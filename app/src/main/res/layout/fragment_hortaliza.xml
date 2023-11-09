@@ -3,12 +3,231 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.hortaliza.HortalizaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_premium"
+            android:backgroundTint="@color/greenrare"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mi hortaliza"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_nav_hortaliza"
+                    android:layout_marginStart="160dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="18dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_mihortaliza">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Revisa tus hortalizas"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toma fotos, revisa el progreso, obten algunos tips y descubre nuevas hortalizas"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayDark">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi Urban Garden"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="24dp"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver más"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="150dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:src="@drawable/img_papas"
+                android:layout_marginLeft="24dp">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:src="@drawable/img_apios"
+                android:layout_marginLeft="24dp">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:src="@drawable/img_cebollas"
+                android:layout_marginLeft="24dp">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_premium"
+            android:backgroundTint="@color/greenrarelight"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pregunta a un experto"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="Obten Premium para comunicarte en tiempo real con un experto"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:textSize="13sp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_experto"
+                    android:layout_marginStart="12dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_buscador"
+                android:backgroundTint="@color/primary"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Premium"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_corona"
+                    android:layout_marginStart="18dp">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next"
+                    android:layout_marginStart="14dp">
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

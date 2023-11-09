@@ -6,5 +6,361 @@
     tools:context=".ui.inicio.InicioFragment"
     android:background="@color/primaryLight">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puebla, Puebla"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:textSize="18sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23°C"
+                    android:textColor="@color/grayDark"
+                    android:textStyle="bold"
+                    android:textSize="17sp">
+                </TextView>
+
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="140dp"
+                android:src="@drawable/img_clima">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:id="@+id/iconUser"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_fotoperfil">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/tvSaludo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buenos días, Jacqueline"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvPresione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Presione aquí para ver su información personal"
+                    android:textColor="@color/grayDark"
+                    android:textSize="13sp">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_premium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prueba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prueba Urban Garden Premium"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="15 días gratis"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rectangle_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_home_corona">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buscador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_buscador"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/icon_lupa"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/icon_lupa">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Busca información o alguna hortaliza"
+                android:textColor="@color/grayDark"
+                android:textSize="13sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_card_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_clock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_home_clock">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Recordatorios"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="No olvides revisar tu hortaliza"
+                    android:textColor="@color/grayDark"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_card_yellow"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_camera"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_home_camera">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Toma Fotos"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/camara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Captura tu hortaliza para ver tu progreso"
+                    android:textColor="@color/grayDark"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/card3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_card_yellow"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_mushroom"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/img_grafica">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Estadísticas"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Reporte estadístico de las mediciones"
+                    android:textColor="@color/grayDark"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_card_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_clock2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_home_clock">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Horas de Riego"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Activar el riego automatizado"
+                    android:textColor="@color/grayDark"
+                    android:textSize="13sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

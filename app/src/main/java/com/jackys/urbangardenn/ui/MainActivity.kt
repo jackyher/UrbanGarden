@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
     }
 
-    private fun goToHome(){
+    private fun goToHome() {
         val i = Intent(this, HomeActivity::class.java)
         startActivity(i)
     }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/primaryLight"/>
+
+    <!-- Radio para redondear las esquinas -->
+    <corners android:radius="12dp"/>
+    <stroke android:width="3dp"
+        android:color="@color/primary"
+        android:dashWidth="30dp"
+        android:dashGap="20dp"/>
+</shape>
